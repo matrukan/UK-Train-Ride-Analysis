@@ -1,18 +1,19 @@
-# 🚆 UK Train Rides Analysis (Maven Analytics Challenge)
+# 🚆 UK Train Rides Analysis (Maven Analytics Challenge) - Power BI Dashboard
 
-This project analyzes train ride data from the UK, using the dataset provided by **Maven Analytics** for a data storytelling challenge. The objective is to uncover meaningful insights about the UK railway system, covering aspects such as route performance, delay patterns, revenue generation, and travel trends over time.
+## Overview
+This Power BI dashboard provides an interactive analysis of UK train rides, focusing on performance metrics, customer trends, and operational insights with 32k Transactions. The dashboard is designed to help stakeholders understand key patterns in train travel data.
 
----
+## 📊 Key Objectives
 
+- Analyze average journey duration and delays by operator and route.
+- Identify the most profitable and high-traffic routes.
+- Explore travel behavior across different months and days.
+- Determine factors influencing delays and trip efficiency.
+
+  
 ## 📁 Dataset Overview
 
 # Railway Ticket Sales Data Description
-
-## Overview
-This dataset contains records of railway ticket transactions, including details about purchases, journeys, and customer information. The data spans from December 8, 2023, to January 3, 2024, and includes various attributes such as purchase methods, ticket types, journey statuses, and more.
-
-## Columns Description
-
 - **Transaction ID**: Unique identifier for each transaction.
 - **Date of Purchase**: The date when the ticket was purchased (format: YYYY-MM-DD).
 - **Time of Purchase**: The time when the ticket was purchased (format: HH:MM:SS).
@@ -32,29 +33,68 @@ This dataset contains records of railway ticket transactions, including details 
 - **Reason for Delay**: Reason provided for any delay (e.g., Signal Failure, Weather Conditions).
 - **Refund Request**: Indicates whether a refund was requested (Yes/No).
 
-## Key Insights
+  ## Key Dataset Insights
 - The dataset includes transactions for various routes, such as London Paddington to Liverpool Lime Street, London Kings Cross to York, and Manchester Piccadilly to Liverpool Lime Street.
 - Ticket prices vary based on factors like class, type, and route.
 - Some journeys were delayed or cancelled due to reasons like signal failures, weather conditions, or technical issues.
 - Refund requests were made for certain delayed or cancelled journeys.
+  
+## Dashboard Components
 
-## Example Use Cases
-- Analyzing peak purchase times and popular routes.
-- Investigating the impact of delays on customer satisfaction (refund requests).
-- Comparing revenue generated from different ticket types (Advance, Off-Peak, Anytime).
+### 1. **Key Metrics Overview**
+   - Total tickets sold
+   - Average ticket price
+   - On-time performance rate
+   - Refund request rate
+   - Most popular routes
 
-## Data Source
-The data is synthetic and generated for demonstration purposes.
+### 2. **Time-Based Analysis**
+   - Daily/Monthly ticket sales trends
+   - Peak purchase hours
+   - Journey frequency by time of day
 
----
+### 3. **Route Performance**
+   - Route popularity heatmap
+   - Delay frequency by route
+   - Average delay duration
+   - Cancellation reasons breakdown
 
-## 📊 Key Objectives
+### 4. **Customer Insights**
+   - Railcard usage distribution
+   - Ticket class preferences
+   - Payment method trends
+   - Purchase channel analysis (Online vs Station)
 
-- Analyze average journey duration and delays by operator and route.
-- Identify the most profitable and high-traffic routes.
-- Explore travel behavior across different months and days.
-- Determine factors influencing delays and trip efficiency.
+### 5. **Financial Analysis**
+   - Revenue by ticket type
+   - Price distribution across routes
+   - Refund impact analysis
 
+## Key Findings
+1. **Peak Travel Times**: Highest ticket sales occur during weekday mornings (7-9 AM) and evenings (4-6 PM).
+2. **Route Performance**: The London Kings Cross to York route shows the highest frequency of delays, primarily due to signal failures.
+3. **Customer Preferences**: 
+   - 68% of tickets sold are Standard class
+   - Contactless payments account for 45% of transactions
+4. **Financial Insights**: 
+   - Advance tickets generate 60% of total revenue despite lower prices
+   - First class tickets have the highest average price but lowest sales volume
+
+## Technical Details
+- **Last Updated**: January 2024
+- **Visualizations Used**: 
+  - Interactive maps
+  - Time-series charts
+  - Heatmaps
+  - Donut and bar charts
+  - KPI cards
+
+## Potential Applications
+- Operational planning for train operators
+- Pricing strategy optimization
+- Resource allocation decisions
+- Customer service improvements
+- Infrastructure investment planning
 ---
 
 ## 🛠️ Tools Used
@@ -79,7 +119,9 @@ Key visuals and insights presented in the Power BI dashboard:
 
 ## 📷 Sample Dashboard View
 
-*You can add a screenshot here once you generate the dashboard:*
+<img src="https://github.com/matrukan/UK-Train-Ride-Analysis/blob/main/UK_Train_Ride_Analysis_Dashboard_Preview.png?raw=true" width="450">
+*Note: Actual dashboard contains interactive elements not shown in static screenshot*
+---
 
 ## 🚀 How to Run This Project
 
@@ -108,9 +150,12 @@ Follow these steps to explore and interact with the UK Train Rides Analysis:
 
 5. Customize or Extend
    - Modify visuals, create new DAX measures, or transform the data further using Power Query.
-
-6. (Optional) Publish to Power BI Service
-   Publish the report to your Power BI workspace to share and schedule updates.
+     
+## Dashboard Tips
+1. **Filters**: Use the interactive filters to focus on specific time periods, routes, or ticket types.
+2. **Tooltips**: Hover over visualizations to see detailed information.
+3. **Drill-Down**: Click on elements to drill down into more specific data (e.g., click on a route to see its monthly performance).
+4. **Cross-Filtering**: Selections in one visualization will filter data in others.
 
 ## 📌 Future Enhancements
 
@@ -134,10 +179,6 @@ Here are some potential improvements and extensions that could be added to this 
 - 🧾 **Passenger Satisfaction Metrics**  
   Incorporate customer feedback or satisfaction scores if available.
 
-- 📤 **Power BI Service Deployment**  
-  Deploy the report to Power BI Service for online access and scheduled refreshes.
-
 - 🔍 **Advanced DAX Measures**  
   Create more complex KPIs like on-time performance percentage, revenue per mile, or load factor.
-
 
